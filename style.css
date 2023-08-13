@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgba(21, 207, 235, 0.613);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* first slide css start============================================ */
+.card{
+    width: 320px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid white;
+    position: relative;
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-body{
+    
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background: rgba(0, 0, 0, 0.386);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.card:hover .card-body{
+    right: 0;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: aliceblue;
+    margin-top: 50%;
+}
+/* first slide css end */
+/* 2nd slide css start============================================== */
+.image-chane{
+    width: 320px;
+    height: 500px;
+    border-radius: 5px;
+    border: 3px slod rebeccapurple;
+    overflow: hidden;
+    margin-left: 10px;
+    position: relative;
+
+}
+
+.change-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-body{
+    position: absolute;
+    bottom:-100%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+
+}
+.image-chane:hover .image-body{
+    bottom: 0;
+}
+/* 2nd slide css end */
+/* =================================================================== */
+.mehedi{
+    margin-left: 30px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    position: relative;
+    cursor: pointer;
+}
+.mehedi::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height:4px;
+    left: 0;
+    bottom: -15%;
+    background-color: black;
+    transform: scale(0);
+    transition: 0.5s;
+    
+}
+
+.mehedi:hover::after{
+   transform: scale(1);
+}
+/* ======================================================= */
+.Sanjana{
+    margin-left: 30px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.Sanjana::after{
+    content: '';
+    position: absolute;
+    width: 20%;
+    height:4px;
+    left: 0;
+    bottom: -15%;
+    background-color: rgb(241, 13, 47);
+    transition: 0.5s;
+    
+}
+.Sanjana:hover:after{
+    width: 100%;
+}
